@@ -58,13 +58,13 @@ body::before {
   border-radius: 50%;
   padding: 4px;
   margin: 0 auto 20px;
-  animation: rotate 8s linear infinite;
+  /* animation: rotate 8s linear infinite; */
   box-shadow: 0 0 40px rgba(59, 130, 246, 0.6);
 }
-@keyframes rotate {
+/* @keyframes rotate {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
-}
+} */
 .avatar {
   width: 100%;
   height: 100%;
@@ -77,6 +77,13 @@ body::before {
   color: white;
   font-weight: bold;
   border: 3px solid #1a1a2e;
+
+    img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
 }
 .info {
   text-align: center;
@@ -188,7 +195,9 @@ button {
 <div class="card">
   <div class="profile">
     <div class="avatar-ring">
-      <div class="avatar">RK</div>
+      <div class="avatar">
+        <img src="images/card.jpg" alt="">
+      </div>
     </div>
     <div class="info">
       <h2 class="name">Profile Card 4</h2>
